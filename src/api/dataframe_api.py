@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from typing import Optional
-from src.db.df import (
+from src.db.dataframe import (
     get_dataframe_as_dict,
     get_dataframe_info,
     clear_dataframe,

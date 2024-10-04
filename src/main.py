@@ -2,12 +2,14 @@ from fastapi import FastAPI
 from contextlib import asynccontextmanager
 from src.api.ping import ping_router
 from src.api.scrapy_api import scrapy_router
-from src.api.db_api import db_router
+from src.api.dataframe_api import db_router
+from src.db.db import init_db
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     print("Starting up...")
+    await init_db()
     yield
     print("Shutting down...")
 

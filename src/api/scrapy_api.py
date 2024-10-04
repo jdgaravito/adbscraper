@@ -4,7 +4,7 @@ from typing import List
 import scrapy
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
-from src.db.df import update_dataframe, get_dataframe
+from src.db.dataframe import update_dataframe, get_dataframe
 
 
 class UrlList(BaseModel):
