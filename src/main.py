@@ -3,7 +3,9 @@ from contextlib import asynccontextmanager
 from src.api.ping import ping_router
 from src.api.scrapy_api import scrapy_router
 from src.api.dataframe_api import db_router
+from src.api.images_api import image_router
 from src.db.db import init_db
+
 
 
 @asynccontextmanager
@@ -24,3 +26,4 @@ app = FastAPI(
 app.include_router(ping_router)
 app.include_router(scrapy_router)
 app.include_router(db_router)
+app.include_router(image_router)

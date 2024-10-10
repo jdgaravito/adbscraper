@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "alembic>=1.13.3",
     "asyncpg>=0.29.0",
     "black>=24.8.0",
     "fastapi[standard]>=0.115.0",
@@ -14,5 +15,6 @@ dependencies = [
     "pydantic-settings>=2.5.2",
     "python-dotenv>=1.0.1",
     "scrapy>=2.11.2",
+    "sqlalchemy>=2.0.35",
     "sqlmodel>=0.0.22",
 ]
